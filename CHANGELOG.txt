@@ -1,0 +1,65 @@
+---------------------------------------------------CHANGELOG---------------------------------------------------
+V1.0.4:
+---------------------------------------------------------------------------------------------------------------
+this update was unintended but i realised it would be incredibly easy to fix results menu items, so all
+previous character changes now have complete icon replacement for character select, minimap, and results menu
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+V1.0.3:
+------------------------------------------------new-replacements:----------------------------------------------
+BABY PEACH --> PIKACHU
+DAISY --> TAILS
+YOSHI --> STEVE
+DONKEY KONG --> SWOLE TOAD --> KING K. ROOL
+
+sonic texture reimplemented to replace vacation luigi on bikes, running luigi for mach bike still works
+-----------------------------------------------------fixes:----------------------------------------------------
+menu icons for:
+cosmicclone (baby mario)
+kid yoshi (baby luigi)
+pikachu (baby peach)
+sonic (luigi)
+tails (daisy)
+steve (yoshi)
+goomba stack (birdo (catherine))
+sans (wario)
+king k. rool (donkey kong)
+
+TEXTURES ARE NOW IMPLEMENTED FOR MULTIPLAYER RACES
+-----------------------------------------------------issues:---------------------------------------------------
+results menu still shows original icons (except for tails ???), i don't see this as important enough to spend
+time fixing
+
+selection models missing for birdo and wario, i would fix this but it is complex artwork and the files simply
+don't exist (if anyone wants to spend time rendering them in the correct format just send me the
+files once your done and i'll include them
+
+GOOMBA STACK: menu model doesn't work, in game model only works for cars
+
+SANS: menu model doesnt work, in game model only works for bikes (and accidentally piranha prowler although
+its a bit janky), he is also in an orange jacket rather than blue because i used the wrong bres files and
+can't be bothered to change them all, custom icons added from google as none were packaged with the textures
+
+random crashes still happen for unknown reason, believed to be part of the original wiimms
+mod and something i can't be bothered to fix, possibly an issue with specific courses
+
+wiimmfi multiplayer does not work as it requires each user to have unique files copied from a different
+wii machine, users can implement this themselves if they wish but i have no intention of doing it
+-----------------------------------------------------notes:----------------------------------------------------
+I've decided to start keeping a changelog. this is due to the fact that normally during the first run through
+or setup, i would explain which things work, which things don't, and where any issues are; this information is
+now easily available and rereadable in the (hopefully) concise format of a text file
+
+
+
+first test of icon replacement successful (tails for daisy),
+character selection menu:
+data>files>scene>UI>MenuSingle.szs>.>button>timg>tt_daisy_64x64.tpl,
+data>files>scene>UI>MenuSingle.szs>.>control>timg>tt_daisy_64x64.tpl,
+data>files>scene>UI>MenuMulti.szs>.>button>timg>tt_daisy_64x64.tpl,
+data>files>scene>UI>MenuMulti.szs>.>control>timg>tt_daisy_64x64.tpl,
+minimap: 
+data>files>scene>UI>Race.szs>.>game_image>timg>st_daisy_32x32.tpl,
+
+custom sound files exist but not yet implemented and i do not intend to implement them as none of us
+ever play with sound enabled
